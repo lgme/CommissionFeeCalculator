@@ -6,15 +6,18 @@
 ## Autoloading
 This project uses PSR-4 autoloading with Composer. The autoloading configuration is defined in the `composer.json` file.
 
-## Packages Used
-- **guzzlehttp/guzzle**: A PHP HTTP client used to make requests to exchange rates API.
-- **php-di/php-di**: A DI container for PHP used to manage and inject dependencies throughout the application.
-- **slim/slim**: A PHP micro-framework.
+## Packages
+- **guzzlehttp/guzzle**: PHP HTTP client used to make requests to exchange rates API.
+- **php-di/php-di**: DI container for PHP used to manage and inject dependencies throughout the application.
+- **slim/slim**: PHP micro-framework.
+- **phpunit/phpunit**: Testing framework for PHP.
+- **phpdotenv**: PHP library that loads environment variables from a `.env` file.
 
-## How to Run
-1. Open a terminal.
-2. Navigate to the project directory.
-3. Run `php public/index.php`
+## How to execute project
+1. Rename the `.env.example` file to `.env`.
+2. Set the `EXCHANGERATES_API_KEY` in the `.env` file.
+3. Run `composer install`.
+4. Open a terminal and run `php public/index.php`
 
 ## How to run tests
 1. Open a terminal.
